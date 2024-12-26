@@ -1,0 +1,50 @@
+<!-- <section id="profile">
+    <div class="section__pic-container">
+        <img src="resources\images\MonkeyDLuffy.jpg" alt="Shubham Borse profile picture" class="profile-pic"/>
+    </div>
+    
+    <div class="section__text">
+        <p class="section__text__p1">Hello World, I'm</p>
+        <h1 class="title">Shubham Borse</h1>
+        <div class="btn-container-1">
+            <button class="btn btn-color-2" onclick="window.open('resources/Other/Shubham_Borse_Resume.pdf')">
+                View CV
+            </button>
+            
+            <a href="https://drive.google.com/uc?export=download&id=1IdjLyIJwTEMMU_AF5kbV8iGKaAkRfdqx" download class="btn btn-color-1">
+                Download CV
+            </a>
+        </div>
+        
+        <div id="socials-container">
+            <img src="resources\images\linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/shubham-borase/'"/>
+            <img src="resources\images\github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/ShubhamBorase/'"/>
+        </div>
+    </div>
+</section> -->
+
+<section id="profile">
+    <div class="section__pic-container">
+      <img [(ngModel)]="profilePicture" [src]="profilePicture" alt="Shubham Borse profile picture" class="profile-pic"/>
+    </div>
+    
+    <div class="section__text">
+      <p class="section__text__p1">Hello World, I'm</p>
+      <h1 class="title">Shubham Borse</h1>
+      <div class="btn-container-1">
+        <button class="btn btn-color-2" (click)="window.open(resumeLink)">
+          View CV
+        </button>
+        
+        <a href="https://drive.google.com/uc?export=download&id=1IdjLyIJwTEMMU_AF5kbV8iGKaAkRfdqx" download class="btn btn-color-1">
+          Download CV
+        </a>
+      </div>
+      
+      <div id="socials-container">
+        <img src="images\linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/shubham-borase/'" height="45" width="45">
+        <img src="images\github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/ShubhamBorase/'" height="45" width="45">
+    </div>
+      
+    </div>
+  </section>  
